@@ -44,7 +44,7 @@ public class Board {
 		pieces[position.getRow()][position.getColumn()] = piece; // atribuindo a peça informada
 		piece.position = position;
 	}
-	
+
 	public Piece removePiece(Position position) {
 		if (!positionExists(position)) {
 			throw new BoardException("Position not on the board");
@@ -65,12 +65,12 @@ public class Board {
 	public boolean positionExists(Position position) {
 		return positionExists(position.getRow(), position.getColumn());
 	}
-	
+
 	public boolean thereIsAPiece(Position position) {
 		if (!positionExists(position)) {
 			throw new BoardException("Position not on the board");
 		}
 		return piece(position) != null;
 	}
-	
+
 }
