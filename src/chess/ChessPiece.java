@@ -12,6 +12,7 @@ public abstract class ChessPiece extends Piece {
 	public ChessPiece(Board board, Color color) {
 		super(board);
 		this.color = color;
+		moveCount = 0; // por estar usando Wrapper Class necessário declarar 0 pois por padrão returna null.
 	}
 
 	public Color getColor() {
