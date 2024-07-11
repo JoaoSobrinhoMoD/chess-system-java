@@ -54,10 +54,10 @@ public class Pawn extends ChessPiece {
 			if (getBoard().positionExists(p) && isThereOpponentPiece(p)){
 				mat[p.getRow()][p.getColumn()] = true;
 			}
-			
 		}
 		return mat;
 	}
+	
 	@Override
 	public String toString() {
 		return "P";
